@@ -1,0 +1,51 @@
+/**
+ * to make a loop that adds 18 to -4 and does it 6 times
+ */
+public class SimpleLoops 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		int x = -4;
+		int i = 1;
+		countSomeNumss(i,x);
+
+	}
+/**
+ *  loop 6 times
+ *  prints x first time for -4
+ *  add 18 to x
+ *  adds 1 to counter
+ *  print x after adding 18
+ */
+	private static void countSomeNumss(int i, int x) 
+	{
+		while(i <= 6) 
+		{
+			System.out.println(x);
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			x++;
+			// can also be written as x+=18; or x = x+18;
+			i++;
+		}
+		
+	}
+
+}

@@ -1,0 +1,81 @@
+/**
+ * make a cake with flavor and layers
+ */
+public class Cake {
+
+	
+	String flavor = new String("cheesecake");
+	
+	int layers = 1;
+	
+	
+	
+	public Cake(String flavor, int layers) 
+	{
+		this.flavor = flavor;
+		this.layers = 1;
+	}
+	
+	
+	
+
+	/**
+	 * 
+	 * @return returns the flavor of the cake
+	 */
+	public String getFlavor() 
+	{
+		return (this.flavor);
+	}
+	
+	
+	/**
+	 * 
+	 * @return returns the amount of layers 
+	 */
+	
+	public int layers()
+	{
+		return (this.layers);
+	}
+	
+	
+	
+	
+	/**
+	 * 
+	 * @return personally I don't know
+	 * it is suppose to have a formal parameter, a string, and changes the flavor of the cake to the 
+	 * input string(cheesecake)
+	 */
+	public String setFlavor() 
+	{
+		return flavor;
+		
+	}
+	
+	
+	/**
+	 *  tells if cake is yummy
+	 */
+	public void tellIfTasty() 
+	{
+		System.out.println("The cake is yummy.");
+	}
+	
+	/**
+	 * 
+	 * @return add 1 to layers
+	 */
+	public int incrementLayer() 
+	{
+		return layers + 1;
+		
+	}
+	
+	
+	
+	
+	
+	
+}

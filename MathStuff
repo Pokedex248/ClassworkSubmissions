@@ -11,7 +11,7 @@ public class MathStuff
 	
 	public static void main(String[] args)
 	{
-		multTwoNums(4,6);
+		
 		
 		
 		
@@ -31,8 +31,160 @@ public class MathStuff
 		System.out.println(prod);
 		
 		
-	       System.out.println(); 
+		
+		
+		
+		
+		
+		int intA = -36;
+		int intB = 12;
+		
+		Integer integerA = -36;
+		Integer integerB = 12;
+		
+		
+		
+		
+		double dubA = -100.0;
+		double dubB = 0.64;
+		
+		Double doubleA = -100.0;
+		Double doubleB = 0.64;
+		
+		
+		
+		
+		multTwoNums(6,4);
+		multTwoInts(intA,intB);
+		multTwoInteger(doubleA, doubleB);
+		absx(intA);
+		absv(integerA);
+		absy(dubA);
+		absz(doubleB);
+		sqrtx(dubA);
+		sqrtDouble(doubleB);
+		sqrtinteger(integerA);
+		
+		System.out.println(intA);
+		System.out.println(dubB);
+		System.out.println(doubleB);
+		System.out.println(intA + integerA);
 	}
+	
+	
+	
+	
+	
+	      
+	
+	
+	     
+
+
+
+
+
+
+
+
+		private static void multTwoInteger(Double doubleA, Double doubleB) 
+		{
+
+			Double z = doubleA;
+			int i = 1;
+			while(i < doubleB) 
+			{
+				doubleA *= z;
+				i++;
+			}
+			
+	       
+			System.out.println(doubleA);
+			
+		
+	}
+
+
+		public static int absx(int intA) 
+		{
+	        return (intA < 0) ? -intA : intA;
+	    }
+		
+		public static int absv(Integer integerA) 
+		{
+	        return (integerA < 0) ? -integerA : integerA;
+	    }
+		
+		public static double absy(double dubA) 
+		{
+	        return (dubA < 0) ? -dubA : dubA;
+	    }
+		
+		public static Double absz(Double doubleB) 
+		{
+	        return (doubleB < 0) ? -doubleB : doubleB;
+	        
+	    }
+		
+		
+		public static double sqrt(double dubA, Double doubleB) 
+		{
+	        return StrictMath.sqrt(dubA);
+	    }
+		
+		public static double sqrtDouble(Double doubleB) 
+		{
+	        return StrictMath.sqrt(doubleB);
+	    }
+
+
+		public static int sqrtx(double dubA) 
+		{
+	        return (int) StrictMath.sqrt(dubA); 
+	    }
+
+		public static int sqrtinteger( Integer integerA) 
+		{
+	        return (int) StrictMath.sqrt(integerA); 
+	    }
+
+
+
+
+
+		
+		
+
+
+
+
+		private static void multTwoInts(int intA, int intB) 
+	{
+	    	
+		
+			int z = intA;
+			int i = 1;
+			while(i < intB) 
+			{
+				intA *= z;
+				i++;
+			}
+			
+	       
+			System.out.println(intA);
+	}
+
+
+
+
+
+	
+		
+
+
+
+
+
 	/**
 	 * counter
 	 * @param x is to be added by some   
@@ -48,8 +200,27 @@ public class MathStuff
 			i++;
 		}
 		System.out.print(x);
+		
+		
+		Integer myInteger = 4;
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		
+		Double myDouble = 6.6;
+		System.out.println(Double.MIN_VALUE);
+		System.out.println(Double.MIN_VALUE);
+		
+		int e = 5;
+		System.out.println((double) e);
+		
+		double f = 3.4;
+		System.out.println((int) f);
+		
+		
+		
 	}
+}
+
 	
   	    
 
-}

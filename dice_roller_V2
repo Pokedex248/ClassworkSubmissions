@@ -1,0 +1,61 @@
+/**
+ * take a user input and gets numbers before and after "d" then add them together
+ */
+import java.util.Scanner;
+public class dice_roller_V2 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner wordScanner = new Scanner(System.in);
+		String num = wordScanner.next();
+		print(num);
+		wordScanner.close();
+	}
+/**
+ * @param l2 
+ *  rolls 2 random numbers and adds them
+ */
+private static void rolldice(int x, int y) 
+{
+	
+	
+	int k = 0;
+	
+	
+	for(int i =0; i<(x); i++)
+	{
+	
+	int n = (int) (Math.random()*y+1);
+	k=k+n;
+	
+		
+	//System.out.print((int)(Math.random()*y)+1);
+		}
+	System.out.print("rolling " + x + " " + y + " sided dices " + "gives " + k);
+	
+	
+		
+	}
+/**
+ * string f and l is the numbers before and after "d"
+ * changed string f and l into integers 
+ * print the f and l then add both
+ * @param num
+ */
+	private static void print(String num) 
+	{
+		int mid = num.indexOf('d');
+		String f = (num.substring(0, mid));
+		String l = (num.substring(mid+ 1));
+		int x = Integer.valueOf(f);
+		int y = Integer.valueOf(l);
+		
+		rolldice(x,y);
+	//System.out.println("The first number is " + f 
+				//+ " and the second number is " + l + ". Their sum is " + (x+y));
+		
+		
+	}
+
+}

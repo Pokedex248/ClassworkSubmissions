@@ -1,0 +1,51 @@
+/**
+ * takes a string and check if there are spaces and then remove the spaces EX(slow down! == slowdown!) 
+ */
+//import java.util.Scanner;
+public class dice_String 
+{
+
+	public static void main(String[] args) 
+	{
+
+		//Scanner wordScanner = new Scanner(System.in);
+		//String word1 = wordScanner.next();
+		
+		//String word1 = new String("slow down!");
+		String word1 = new String("Why are we doing this?");
+		char word2 = (' ');
+		
+		String wordWithoutSpaces = change_String(word1, word2); 
+		System.out.println(wordWithoutSpaces);
+		
+		
+		//wordScanner.close();
+		
+	}
+/**
+ * where the magic happens
+ * 
+ */
+	private static String change_String(String word1, char word2) 
+	{
+		int x = 0;
+		for(int i =0; i<(word1.length()); i++) //simple loop to check the entire word for a certain 
+//character such as ' ' or "c"
+		{
+			if(word1.charAt(i) == word2) //if there is a space add 1 to x 
+			{
+				x++;
+				
+			}
+			
+	}
+		if(x>=1) //checks if there is any spaces at all and if there is any spaces change string
+		{
+			word1 = word1.concat(" Whyarewedoingthis?");
+		}
+			return word1;
+	}
+}
+	
+
+

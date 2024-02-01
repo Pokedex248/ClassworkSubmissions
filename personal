@@ -1,0 +1,71 @@
+import java.util.Scanner;
+public class dice_roller_fin {
+
+	public static void main(String[] args) {
+		
+		Scanner wordScanner = new Scanner(System.in);
+		String input = wordScanner.next();
+		char check =('+');
+		//System.out.println(" ");
+		dice_if(input, check);
+		
+		num(input);
+		
+		
+		
+		
+		wordScanner.close();
+	}
+
+	private static void dice_if(String input, char check) 
+	{
+		int x = 0;
+		for(int i =0; i<(input.length()); i++)
+		{
+			if(input.charAt(i) == check)
+			{
+				System.out.print("hi");
+				//input.substring('+');
+			}	
+		}
+			
+		
+	}
+		
+		 
+
+
+
+	private static void num(String num) {
+		int mid = num.indexOf('d');
+		String f = (num.substring(0, mid));
+		String l = (num.substring(mid+ 1));
+		int x = Integer.valueOf(f);
+		int y = Integer.valueOf(l);
+		
+		
+		
+		rolldice(x,y);
+	}
+
+	private static void rolldice(int x, int y) 
+	{
+		
+
+		int k = 0;
+		
+		
+		for(int i =0; i<(x); i++)
+		{
+		
+		int n = (int) (Math.random()*y+1);
+		k=k+n;
+		
+			}
+		System.out.print("rolling " + x + " " + y + " sided dices " + "gives " + k);
+		
+		
+	}
+	}
+
+	

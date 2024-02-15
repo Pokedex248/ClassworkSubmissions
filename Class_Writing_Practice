@@ -1,0 +1,34 @@
+
+public class Class_writing_practice {
+private double theologyGrade;
+private double mathGrade;
+private double scienceGrade;
+private int gradeLevel;
+private String name;
+
+
+public Class_writing_practice(double a, double b, double c, int d, String n)
+{
+	theologyGrade = a;
+	mathGrade = b;
+	scienceGrade = c;
+	gradeLevel = d;
+	name = n;
+}
+
+private double getGPA() 
+{
+	double average = (theologyGrade + mathGrade + scienceGrade) / 3;
+	
+	return average;
+}
+public void introduceSelf()
+{
+	
+	System.out.println("I am a student in grade" + gradeLevel + "and my name is" + name + 
+			"and my average GPA is" + getGPA());
+	
+	
+}
+
+

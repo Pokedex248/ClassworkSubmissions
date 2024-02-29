@@ -1,0 +1,43 @@
+/**
+/*task to do methods
+/*
+public class array_task {
+
+	public static void main(String[] args) {
+		
+		int [] arr = {2,4,6,8,10,12};
+		int n = 4;
+		
+		
+		divideElementByTwo(arr, n);
+		
+		FirstAndLastArray(arr);
+
+	}
+
+	private static int[] FirstAndLastArray(int[] arr) {
+	 int num1 =arr[0];	
+//changed num1 to the first index of array
+	 int num2 =arr[arr.length-1];
+//change num2 to the last index of the array
+	 int [] num3 = {num1,num2};
+//makes so that it is able to return two values using 1 varible
+	return num3;  
+	 
+		
+		
+		
+		
+	}
+
+	private static void divideElementByTwo(int [] arr, int n) 
+	{
+		int div = arr[n]/2;
+//pass arr n and then div by 2
+		arr[n] = div;
+		
+		
+		
+		
+	}
+}

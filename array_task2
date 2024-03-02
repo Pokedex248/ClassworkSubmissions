@@ -1,0 +1,23 @@
+
+public class array_task2 {
+
+	public static void main(String[] args) {
+		
+		
+		
+	int index = 2;	
+	double [] array = {3.26, 8.84, 9.63, -4.22, 12.80};
+	
+	
+	printPrevnextElement(array, index);
+	}
+	
+	private static void printPrevnextElement(double[] array, int index) {
+		
+		System.out.println(array[index-1]);
+		System.out.print(array[index+1]);
+		
+		
+	}
+
+}

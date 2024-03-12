@@ -1,0 +1,52 @@
+/**
+ * to do task 1 and 2 
+ */
+public class arrayclasswork {
+
+	public static void main(String[] args) {
+		
+		int [] arr1 = {3,17,12,8,9,4,12};
+		double [] arr = {3.1,2.1,8.4};
+		
+		int j =0; //
+		int n =0; //placeholder
+		
+		sumArrElements(arr,j,n);
+		makeEveryOtherOne(arr1, j);
+		
+		System.out.print(arr1);
+	}
+	/**
+	 * makes eveyother element change into 1
+	 * @param arr1 is the array that is being changed 
+	 * @param j is the treaverser and j+1 checks every other 
+	 */
+	private static void makeEveryOtherOne(int [] arr1, int j) {
+		
+		for(;j<arr1.length;j+=1)
+		{
+			if(j<=arr1.length-1) {
+				arr1[j+1] = 1;
+			}	
+			}
+		}
+
+	/**
+	 * 
+	 * @param arr 
+	 * @param j
+	 * @param n is the placeholder
+	 * @return the sum
+	 */
+	private static double sumArrElements(double [] arr, int j, double n) {
+		
+		for(;j<arr.length;j++) 
+		{
+			 n+=arr[j]; //j is the traversal and add the previous element to n 
+		}
+		return n;
+		
+			
+	}
+
+}

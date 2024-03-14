@@ -1,0 +1,108 @@
+
+public class traversal_method_hw {
+
+	public static void main(String[] args) {
+		double sum=0;
+		int max =0;
+		int [] arr1 = {2,6,3,9,1,1,4};
+		
+		arraytask1(arr1,max);
+		
+		double [] arr2 = {3.1,4.2,5.0,6.2,6.9};
+		
+		arraytask2(arr2, sum);
+		
+		int [] arr3 = {1,6,9};
+		
+		arraytask3(arr3);
+		
+		int [] arr4 = {4,2,18};
+		
+		arraytask4();
+		
+		
+		double [] arr5 = {2.0,8.8,8.8,8.8,9.0,3.1};
+		
+		arraytask5(arr5);
+
+	}
+
+	private static void arraytask4() {
+		
+		
+	}
+
+	private static boolean arraytask3(int [] arr3) {
+		int traverser = 0;
+		boolean checkevens = false;
+		for(;traverser<=arr3.length-1;traverser++)
+		{
+			if(arr3[traverser] % 2 == 0  )
+			{
+				checkevens=true;
+			}
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		return checkevens;
+		
+	}
+
+	private static double arraytask2(double [] arr2, double sum) {
+		int traverser =0;
+		double ave =0;
+		for (;traverser<arr2.length;traverser++) {
+			sum+= arr2[traverser];
+			
+			
+		}
+		
+		double div = sum/arr2.length;
+		
+		
+		return div;
+		
+	}
+
+	private static int arraytask1(int [] arr1, int max) {
+		int traverser = 0;
+		max = arr1[0];
+		for(;traverser<arr1.length;traverser++)
+		{
+			if(arr1[traverser] > max) {
+				max = arr1[traverser];
+			}
+			
+			
+		}
+		return max;
+		
+		
+		
+	}
+
+	private static boolean arraytask5(double[] arr5) {
+		int traverser = 0;
+		boolean hasThree = false;
+		for(;traverser<=arr5.length-3;traverser++) {
+			if(arr5[traverser] == arr5[traverser+1] && arr5[traverser] == arr5[traverser+2]) {
+				hasThree = true;
+			}
+		}
+		
+		
+		
+		return hasThree;
+	
+		
+	}
+
+}

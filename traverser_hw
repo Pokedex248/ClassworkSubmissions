@@ -27,8 +27,31 @@ public class traversal_method_hw {
 
 	}
 
-	private static void arraytask4() {
+	private static boolean arraytask4(int []arr4) {
+				int traverser = 0;
+		boolean checkevens = false;
+		for(;traverser<=arr3.length-1;traverser++)
+		{
+			if(arr3[traverser] % 2 == 0  )
+			{
+				checkevens=true;
+			}
+			else{
+				checkevens=false;
+			}			
+			
+		}
 		
+		
+		
+		
+		
+		
+		
+		
+		return checkevens;
+		
+	}
 		
 	}
 

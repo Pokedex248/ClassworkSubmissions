@@ -1,0 +1,70 @@
+/**
+ * 
+ */
+public class BubbleSorter {
+
+	public static void main(String[] args) {
+		
+		int[] bigNums = makeRandom();
+		bubbleSort(bigNums);
+		printArr(bigNums);
+		
+		
+	
+		
+	}
+private static void printArr(int[] bigNums) {
+	for(int element: bigNums) {
+		System.out.println(element);
+	}
+	
+	}
+
+		
+	
+private static int[] bubbleSort(int[] bigNums) {
+	int j = 0;
+	while(j<bigNums.length-1) 
+	{
+		for(int i=0;i<bigNums.length-1;i++) 
+		{
+			if(bigNums[i]>bigNums[i+1]) 
+			{
+				int temp = bigNums[i];
+				bigNums[i] = bigNums[i+1];
+				bigNums[i+1] = temp;
+			}
+		}
+		
+		
+		j++;
+	}
+	return bigNums;
+	
+	
+	
+	
+}
+/**
+ * this method makes a array with random numbers 
+ * 
+ * @return
+ */
+	private static int[] makeRandom() {
+		
+		int[] bigNums = new int[2000]; //makes an array with 2000 placeholder values 
+		int len = bigNums.length; //finds the length of the array for it to be use in the for loop 
+		
+		for (int i = 0; i < len; i++)//i is the counter and traverser 
+		{
+			int randomNumber = (int) ((Math.random() * 1000) + 1); // gives a random value
+			bigNums[i] = randomNumber; //assigns the current placeholder values into a random number
+			
+		}
+		
+		return bigNums; //gives a random array 
+
+	
+}
+}
+

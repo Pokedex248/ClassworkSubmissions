@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class ArrayListIntroAssigment {
+
+	public static void main(String[] args) {
+		ArrayList<String> studentNames = new ArrayList<String>();
+		studentNames.add("Alice");
+		studentNames.add("Charlie");
+		studentNames.add("Dave");
+		studentNames.add("Elizabeth");
+		studentNames.add("Fieri");
+		studentNames.add("Gwen");
+		studentNames.add(0,"Brittany");
+		
+		studentNames.remove(2);
+		studentNames.size();
+		studentNames.set(3,"Evan");
+		
+		
+		System.out.print(studentNames);
+	}
+
+}

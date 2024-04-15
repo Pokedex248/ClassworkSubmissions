@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+/**
+ * Task 1: Print out the length of the foods ArrayList. 
+
+Task 2: Inside of a print statement, add the String "Dole Whip" to foods. In the line comment 
+for this code, state what it prints.
+
+Task 3: Inside of a print statement, use the .set(E) method to change "Bread" in foods 
+to "Butter". Comment what it prints. 
+
+Task 4: Inside of a print statement, use the .remove(int) method to remove "Cookies"
+ from foods. Comment what it prints.
+
+Task 5: For each task, go back and comment what the method you are calling does, 
+and what the method returns (both in general and in this case).
+ */
+public class ArrayListMethodsInDepth {
+
+	public static void main(String[] args) {
+		ArrayList<String> food = new ArrayList<String>();
+		food.add("Apples");
+		food.add("Bread");
+		food.add("Cookies");
+		System.out.println(food.size()); // the method is used to get the length of the list
+		// it returns 3
+		
+		System.out.println(food.add("Dole Whip")); //this piece of code prints true
+		//this method = adding onto the last element of the list and should return the list plus Dole w
+		
+		System.out.println(food.set(1,"Butter")); //it still prints bread 
+		//this method = changing the index to whatever put and returns apples, butter, cookies
+		
+		System.out.println(food.remove(2)); //it will remove cookies 
+		//this method = removes whatever is at the index of 2 and should return apple, bread
+		
+		
+
+	}
+
+}

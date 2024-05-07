@@ -1,0 +1,53 @@
+/**
+ * Task 1: Declare a 2D array of Strings with 7 rows and 6 columns. 
+
+Task 2: One by one, print out the first element in each row, from top to bottom. 
+
+Task 3: The code from Task 2 looks like it could be done using a loop. Use a loop to print out each row's first element. 
+
+/******* When traversing 2D arrays down a column, it is called a "column-major order" traversal.  ********/
+
+Task 4: One by one, print out each element in the first row only, from left to right. 
+
+Task 5: Huh, that last task also looks like it could be done using a loop. Please use a loop to print out each element in the first row. 
+
+/******* When traversing 2D arrays down a row, it is called a "row-major order" traversal.  ********/
+
+Task 6: Copy your code from task 3 and paste it wherever you are doing this task. Edit it so it prints every element in each row, instead of just the first element. (Hint: first, make it print the first AND second elements of each row. Then make it print the first, second, AND the third element of each row. See a patern? If you turn this code into a loop, your nested loops will print out every element.) 
+ */
+public class twodArrTrav {
+
+	public static void main(String[] args) {
+		String [][] cHaR = new String [7][6]; 
+		String [][] let = { {"a","b","c","d","e","f"}, 
+							{"a","b","c","d","e","f"}, 
+							{"a","b","c","d","e","f"}, 
+							{"a","b","c","d","e","f"}, 
+							{"a","b","c","d","e","f"}, 
+							{"a","b","c","d","e","f"}, 
+							{"a","b","c","d","e","f"}};
+		int row = let.length;
+		int coll = let[0].length;
+		int i =0;
+		while(i<let.length-1) //task 5
+		{
+			System.out.println(let[0][i]);
+			i++;
+		}
+		while(i<let.length) //task 3
+		{
+			System.out.println(let[i][0]);
+			i++;
+		}
+		for(int c = 0;c<let[0].length;c++) 
+		{
+		for(int r=0;r<let.length;r++) 
+		{
+			System.out.print(let[r][c]);
+		}
+		}
+		
+
+	}
+
+}
